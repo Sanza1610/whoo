@@ -128,13 +128,86 @@ a {
   justify-content: center;
 }
 
+.rol {
+  font-family: 'Roboto-Light';
+}
+
+.robl {
+  font-family: 'Roboto-Black';
+}
+
+.bdb {
+  font-family: 'UVNBachDangBold';
+}
+
 header {
+  .logo {
+    position: fixed;
+    top: 27px;
+    left: 66px;
+    z-index: 10;
+  }
+  .menu {
+    position: fixed;
+    z-index: 10;
+    top: 32px;
+    right: 80px;
+    margin: 0;
+    li {
+      position: relative;
+      a {
+        display: block;
+        font-size: 1.125em;
+        color: #636466;
+        text-transform: uppercase;
+        &:hover {
+          color: #9e7658;
+        }
+      }
+    }
+    li:after {
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 7px;
+      background: url("../img/ic-whoo.png") no-repeat 0 0;
+      top: 50%;
+      left: -20px;
+      margin-top: -3.5px;
+    }
+    li:first-child::after {
+      display: none;
+    }
+    .list-inline-item:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
 }
 
 footer {
+  .hot-line {
+    position: fixed;
+    bottom: 27px;
+    left: 80px;
+    .robl;
+    color: #000000;
+    font-size: 1.500em;
+  }
 }
 
 .home-page {
+  h2 {
+    .bdb;
+    text-transform: uppercase;
+  }
+  .store{
+    p{
+      .rol;
+      max-width: 838px;
+      font-size: 2.125em;
+      margin: auto;
+    }
+  }
 }
 
 @media (max-width: 1600px) {

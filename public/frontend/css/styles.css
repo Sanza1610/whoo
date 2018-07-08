@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url('../fonts/Roboto-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Black.woff') format('woff'), url('../fonts/Roboto-Black.ttf') format('truetype'), url('../fonts/Roboto-Black.svg#Roboto-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'UVNBachDangBold';
+  src: url('../fonts/UVNBachDangBold.eot?#iefix') format('embedded-opentype'), url('../fonts/UVNBachDangBold.woff') format('woff'), url('../fonts/UVNBachDangBold.ttf') format('truetype'), url('../fonts/UVNBachDangBold.svg#UVNBachDangBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .imba {
   display: inline-block;
   vertical-align: middle;
@@ -139,5 +157,73 @@ a:hover {
 }
 .pagination {
   justify-content: center;
+}
+.rol {
+  font-family: 'Roboto-Light';
+}
+.robl {
+  font-family: 'Roboto-Black';
+}
+.bdb {
+  font-family: 'UVNBachDangBold';
+}
+header .logo {
+  position: fixed;
+  top: 27px;
+  left: 66px;
+  z-index: 10;
+}
+header .menu {
+  position: fixed;
+  z-index: 10;
+  top: 32px;
+  right: 80px;
+  margin: 0;
+}
+header .menu li {
+  position: relative;
+}
+header .menu li a {
+  display: block;
+  font-size: 1.125em;
+  color: #636466;
+  text-transform: uppercase;
+}
+header .menu li a:hover {
+  color: #9e7658;
+}
+header .menu li:after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 7px;
+  background: url("../img/ic-whoo.png") no-repeat 0 0;
+  top: 50%;
+  left: -20px;
+  margin-top: -3.5px;
+}
+header .menu li:first-child::after {
+  display: none;
+}
+header .menu .list-inline-item:not(:last-child) {
+  margin-right: 28px;
+}
+footer .hot-line {
+  position: fixed;
+  bottom: 27px;
+  left: 80px;
+  font-family: 'Roboto-Black';
+  color: #000000;
+  font-size: 1.500em;
+}
+.home-page h2 {
+  font-family: 'UVNBachDangBold';
+  text-transform: uppercase;
+}
+.home-page .store p {
+  font-family: 'Roboto-Light';
+  max-width: 838px;
+  font-size: 2.125em;
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */
